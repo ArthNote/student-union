@@ -1,0 +1,144 @@
+@import "./Colors.css";
+
+.about-main {
+  width: 100%;
+  height: 87.3vh;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: row;
+  padding: 0 80px;
+}
+
+.content {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+
+.content h5 {
+  color: var(--blue-color);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.content h1 {
+  font-size: 70px;
+  font-weight: 700;
+  color: var(--primary-text-color);
+}
+
+.content span {
+  color: var(--green-color);
+}
+
+.content h4 {
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--primary-text-color);
+}
+
+.my-image {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-image img {
+  width: 92%;
+}
+
+.sm img {
+  width: 40px;
+  margin-right: 25px;
+}
+
+.sm img:hover {
+  transform: scale(1.2);
+  transition: 0.4s;
+}
+
+/*skills section*/
+
+.skills {
+  background-color: var(--other-bg-color);
+  width: 100%;
+  align-items: center;
+  padding: 90px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.skills h1 {
+  color: var(--primary-text-color);
+  font-size: 55px;
+}
+
+.skills h1 span {
+  color: var(--green-color);
+}
+
+.skills-holder {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 70px;
+  padding: 0 15px;
+}
+
+.skill-block {
+  background-color: var(--blue-color);
+  width: 350px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  gap: 20px;
+}
+
+.skill-block:hover {
+  transform: translateY(-15px);
+  background-color: var(--green-color);
+  box-shadow: 0px 15px 40px 0px var(--green-color);
+  transition: 0.4s;
+}
+
+.skill-block h2 {
+  font-size: 40px;
+  color: var(--background-color);
+}
+
+.skill-block i {
+  font-size: 40px;
+  color: var(--background-color);
+}
+
+@media screen and (max-width: 1220px) {
+  .my-image {
+    display: none;
+  }
+  .about-main {
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 917px) {
+  .content h1 {
+    font-size: 50px;
+  }
+}

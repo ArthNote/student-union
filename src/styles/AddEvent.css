@@ -1,0 +1,101 @@
+@import "./Colors.css";
+
+.add-event {
+  width: 100%;
+  height: 75.2vh;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.add-event h1 {
+  color: var(--green-color);
+  font-size: 40px;
+}
+
+.add-event form {
+  width: 60%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.add-event-inputs {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.add-event-inputs input {
+  border: none;
+  background-color: transparent;
+  border-bottom: solid 1px var(--blue-color);
+  color: var(--primary-text-color);
+  height: 15%;
+  width: 70%;
+  min-width: 300px;
+}
+
+.add-event-btn {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.add-event-btn textarea {
+  border: none;
+  resize: none;
+  background-color: transparent;
+  border-bottom: solid 1px var(--blue-color);
+  color: var(--primary-text-color);
+  height: 15%;
+  width: 70%;
+  min-width: 300px;
+}
+
+.add-event-btn a {
+  width: 70%;
+  margin-top: 8px;
+  min-width: 300px;
+}
+
+.add-event-btn button {
+  width: 100%;
+  border-radius: 10px;
+  min-width: 300px;
+  padding: 15px 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 917px) {
+  .add-event form {
+    flex-direction: column;
+    gap: 0;
+    height: 100%;
+  }
+
+  .add-event {
+    height: 100vh;
+  }
+}

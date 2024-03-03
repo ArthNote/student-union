@@ -1,0 +1,31 @@
+@import "./Colors.css";
+
+footer {
+  background-color: var(--other-bg-color);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0 20px 0;
+  gap: 8px;
+}
+
+footer h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+footer h6 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+footer h5 {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--blue-color);
+}
+
+footer h2 span{
+    color: var(--blue-color);
+}

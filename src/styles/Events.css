@@ -1,0 +1,273 @@
+@import "./Colors.css";
+
+.events {
+  width: 100%;
+  height: fit-content;
+  min-height: 75vh;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.events-img {
+  height: 49vh;
+  width: 100%;
+  background-image: url("../assets/pizza.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.events-img h1 {
+  color: var(--primary-text-color);
+  font-size: 40px;
+}
+
+.events-section {
+  margin-top: 20px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: 15px 20px;
+}
+
+.tab {
+  background-color: var(--other-bg-color);
+  width: 50%;
+  max-width: 300px;
+  text-align: center;
+  padding: 15px 10px;
+}
+
+.tab h1 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.left {
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-right: 1px solid var(--background-color);
+}
+
+.right {
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  border-left: 1px solid var(--background-color);
+}
+
+.tab.active {
+  background-color: var(--green-color);
+  box-shadow: 0 5px 20px var(--green-color);
+}
+
+.tab.active h1 {
+  color: var(--background-color);
+}
+
+.tab:hover {
+  background-color: var(--green-color);
+  box-shadow: 0 5px 20px var(--green-color);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.tab:hover h1 {
+  color: var(--background-color);
+}
+
+.events-lists {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.events-list {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.events-list {
+  animation: fadeEffect 0.5s;
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.event {
+  background-color: #f9f9f9;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  min-height: 300px;
+  height: fit-content;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  margin: 15px 0;
+}
+
+.event:hover {
+  box-shadow: 0 5px 20px var(--green-color);
+  transition: 0.2s ease-in-out;
+  transform: translateY(-15px);
+}
+
+.event-img {
+  max-width: 280px;
+  width: 25%;
+  height: 280px;
+}
+
+.event-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.event-content {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 15px;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+  align-items: center;
+}
+
+.seperator {
+  background-color: var(--primary-text-color);
+  height: 20px;
+  width: 3px;
+}
+
+.info h3 {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.info h3 span {
+  color: var(--blue-color);
+}
+
+.info h3 span i {
+  margin-right: 5px;
+}
+
+.info .icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.info .icons i {
+  color: var(--primary-text-color);
+  text-align: right;
+  cursor: pointer;
+}
+
+.name-desc {
+  flex: 2;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.name-desc h1 {
+  font-size: 35px;
+  color: var(--primary-text-color);
+}
+
+.name-desc p {
+  color: var(--primary-text-color);
+}
+
+.view-more {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.view-more a {
+  text-decoration: none;
+  color: var(--blue-color);
+}
+
+.view-more h1 {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.view-more i {
+  margin-right: 5px;
+}
+
+#upcoming {
+  display: none;
+}
+
+#past {
+  display: none;
+}
+
+@media screen and (max-width: 1220px) {
+  .events-list {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .event-img {
+    display: none;
+  }
+
+  .event-content {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .info {
+    gap: 7px;
+  }
+
+  .info h3 {
+    font-size: 15px;
+  }
+
+  .tab h1 {
+    font-size: 16px;
+  }
+}
