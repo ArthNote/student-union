@@ -114,7 +114,6 @@ function Events() {
                   id={event.id}
                 />
               ))}
-              ;
             </div>
             <div
               className="events-list"
