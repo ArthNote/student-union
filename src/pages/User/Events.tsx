@@ -4,8 +4,6 @@ import Event from "../../components/Event";
 import { useState, useEffect } from "react";
 import {
   collection,
-  deleteDoc,
-  doc,
   getDocs,
   query,
   where,

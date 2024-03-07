@@ -10,7 +10,7 @@ import {
   updateDoc,
 } from "firebase/firestore";
 import { db } from "../../config/firebase";
-import { Event } from "../../models/Event";
+
 
 function EditEvent() {
   const params = useParams();

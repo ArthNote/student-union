@@ -1,4 +1,4 @@
-import Image from "../assets/pizza.svg"
+
 
 export interface Event {
   name: any;

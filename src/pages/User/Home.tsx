@@ -3,14 +3,12 @@ import bg from "../../assets/bg.svg";
 import grad from "../../assets/Graduation-rafiki.svg";
 import Button from "../../components/Button";
 import LatestEvent from "../../components/LatestEvent";
-import { LatestEvents } from "../../models/Event";
 import {
   collection,
   getDocs,
   limit,
   orderBy,
   query,
-  where,
 } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { db } from "../../config/firebase";
