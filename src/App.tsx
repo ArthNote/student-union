@@ -10,6 +10,7 @@ import Register from './pages/Register';
 import AdminEvents from './pages/Admin/Events';
 import AddEvent from './pages/Admin/AddEvent';
 import EditEvent from './pages/Admin/EditEvent';
+import EventPage from './pages/EventPage';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
             <Route path="/admin-events" Component={AdminEvents} />
             <Route path="/add-event" Component={AddEvent} />
             <Route path="/edit-event/:id" Component={EditEvent} />
+            <Route path="/event" Component={EventPage} />
           </Routes>
           <Footer />
         </div>
